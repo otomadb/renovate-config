@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "config:best-practices",
+    ":timezone(Asia/Tokyo)",
+    ":automergePatch"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "digest": {
+    "automerge": true
+  },
+  "pin": {
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "^@types/"
+      ],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    },
+    {
+      "extends": [
+        "packages:eslint",
+        ":automergeMinor"
+      ]
+    }
+  ]
+}

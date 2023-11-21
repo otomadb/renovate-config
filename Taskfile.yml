@@ -1,0 +1,10 @@
+version: "3"
+
+tasks:
+  validate:
+    cmds:
+      - |
+        for file in *.json
+        do
+          npx --package renovate -c 'renovate-config-validator ${file}'
+        done
