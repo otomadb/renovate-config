@@ -24,9 +24,13 @@
       }
     },
     {
+      "groupName": "linters",
       "extends": [
-        "packages:eslint",
+        "packages:linters",
         ":automergeMinor"
+      ],
+      "matchPackagePatterns": [
+        "^@typescript-eslint/"
       ]
     }
   ]
