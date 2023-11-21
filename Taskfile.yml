@@ -6,5 +6,5 @@ tasks:
       - |
         for file in *.json
         do
-          npx --package renovate -c 'renovate-config-validator ${file}'
+          npx --package renovate -c "renovate-config-validator $file"
         done
