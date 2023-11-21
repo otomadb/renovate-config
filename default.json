@@ -32,6 +32,15 @@
       "matchPackagePatterns": [
         "^@typescript-eslint/"
       ]
+    },
+    {
+      "groupName": "typescript",
+      "extends": [
+        ":automergeMinor"
+      ],
+      "matchPackagePatterns": [
+        "typescript"
+      ]
     }
   ]
 }
