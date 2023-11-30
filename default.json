@@ -34,6 +34,12 @@
       ]
     },
     {
+      "groupName": "bufbuild",
+      "matchPackagePatterns": [
+        "^@bufbuild/"
+      ]
+    },
+    {
       "groupName": "typescript",
       "extends": [
         ":automergeMinor"
