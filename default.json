@@ -24,9 +24,8 @@
       }
     },
     {
-      "groupName": "linters",
+      "groupName": "typescript-eslint",
       "extends": [
-        "packages:linters",
         ":automergeMinor"
       ],
       "matchPackagePatterns": [
